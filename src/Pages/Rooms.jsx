@@ -1,7 +1,4 @@
 
-
-
-
 import React from "react";
 import CenterHeading from '../Component/CenterHeding';
 import room1 from "../assets/room1.jpg";
