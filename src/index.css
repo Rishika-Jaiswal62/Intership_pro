@@ -1,0 +1,201 @@
+@import "tailwindcss";
+
+html, body {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: inherit;
+  text-decoration: none;
+}
+
+
+
+
+.hero-container{
+    width: 100%;
+    height: 80vh;
+    background-image: url(assets/hero.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer{
+  background-color: #27323f;
+}
+  
+/* div{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px;
+} */
+
+
+
+/* header .logo{
+   width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+} */
+
+nav ul {
+  display: flex;
+   justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+nav ul li {
+   list-style: none;
+}
+
+
+nav ul li a{
+   font-weight: bold;
+   font-size: 1rem;
+   color: #fff;
+   transition: all .3s linear;
+}
+
+
+
+/* nav ul li  a:hover{
+   color: rgb(161, 155, 155);
+   contain: '';
+   height: 2px;
+   width: 4px;
+} */
+
+
+nav ul li a{
+  position: relative;
+  color: white;
+  text-decoration: none;
+   display: inline-block;
+  transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+ content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px; /* Line thoda text ke niche */
+  width: 0;
+  height: 2px;
+  
+  background-color: #F3E2D4; /* green shade */
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #1C6EA4;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.social-icon,
+ .Search, 
+ .Twitter{   
+  display: flex; 
+  gap: 1rem;
+  color: #fff;
+  font-size: 1.2rem;
+    transition: all .3s linear;
+}
+
+.social-icon .btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: coral;
+  width: 23rem;
+  height: 2.5rem;
+  color: blue;
+}
+
+
+button{
+  padding-left: 2rem;
+padding-right: 2rem;
+}
+
+/* 
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
